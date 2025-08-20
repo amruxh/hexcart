@@ -1,4 +1,5 @@
 import { Github, Twitter, Linkedin, Send, Mail, Phone, MapPin } from 'lucide-react';
+import { Metadata } from 'next';
 
 export default function Contact() {
     return (
@@ -48,4 +49,8 @@ export default function Contact() {
             </div>
         </section>
     );
+}
+
+export const metadata: Metadata = {
+  title: "Contact - HEXCART"
 }

@@ -1,3 +1,5 @@
+import { Metadata } from "next";
+
 const About = () => {
   return (
     <>
@@ -40,3 +42,7 @@ const About = () => {
 };
 
 export default About;
+
+export const metadata: Metadata = {
+  title: "About - HEXCART"
+}

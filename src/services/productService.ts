@@ -83,3 +83,13 @@ export const getCarouselData = async (): Promise<CarouselData[] | []> => {
     return [];
   }
 }
+
+export const getCartProducts = async (cartItems: { id: number; quantity: number }[]) => {
+  const products = await Promise.all(
+    cartItems.map(async (item) => {
+      const product = await getProductById(item.id);
+      return { ...product, quantity: item.quantity };
+    })
+  );
+  return products;
+};
