@@ -1,7 +1,11 @@
-import ProductCard from "../Cards/ProductCard";
+import ProductCard from "../../Products/Cards/ProductCard";
 import { Product, Products } from "@/types";
 
-export default function OfferSection({ productsData }: { productsData: Products | null }) {
+export default function OfferSection({
+  productsData,
+}: {
+  productsData: Products | null;
+}) {
   const offersData = productsData?.products.filter(
     (product: Product) => product.discountPercentage > 19.05
   );

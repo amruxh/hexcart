@@ -1,6 +1,6 @@
-import OfferSection from "@/components/Products/Offers/OfferSection";
+import OfferSection from "@/components/Home/Offers/OfferSection";
 import Carousel from "@/components/Carousel/Carousel";
-import BannerSection from "../Products/Offers/BannerSection";
+import BannerSection from "./Offers/BannerSection";
 import { getAllProducts, getCarouselData } from "@/services/productService";
 
 const HomeSection = async () => {
